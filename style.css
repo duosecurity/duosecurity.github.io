@@ -1,9 +1,14 @@
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #54626a
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #54626a;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   color: #363f44;
   text-rendering: optimizeLegibility;
@@ -11,20 +16,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  color: #54626a
+  color: #54626a;
 }
-
-
 
 .faq-detail {
   padding: 2rem;
 }
-.faq-detail p{
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+.faq-detail p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
-.faq-content p{
-    margin-bottom: 0.75em;
+
+.faq-content {
+  display: block;
+  float: left;
+  width: 74.41059%;
+}
+
+.faq-content p {
+  margin-bottom: 0.75em;
 }
 
 .faq-content ul {
@@ -34,7 +44,8 @@ p {
   line-height: 160%;
 }
 
-ol li, ul li {
+ol li,
+ul li {
   display: list-item;
   margin-top: 0.5rem;
   font-weight: 400;
@@ -49,4 +60,35 @@ ul li::marker {
   text-indent: 0px !important;
   text-align: start !important;
   text-align-last: start !important;
+}
+
+.faq-nav {
+  float: left;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  display: block;
+}
+
+.faq-nav li {
+  font-size: 0.875rem;
+  list-style-type: none;
+}
+
+.sticky-wrapper {
+  height: 627px;
+}
+
+.faq-sticker {
+  overflow-y: auto;
+  max-height: 100%;
+  width: 195px;
+  position: fixed;
+  top: 102px;
+  z-index: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s ease-in-out;
 }
