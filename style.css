@@ -1,0 +1,52 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #54626a
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #363f44;
+  text-rendering: optimizeLegibility;
+  scroll-margin-top: 4.375rem;
+}
+
+p {
+  color: #54626a
+}
+
+
+
+.faq-detail {
+  padding: 2rem;
+}
+.faq-detail p{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+.faq-content p{
+    margin-bottom: 0.75em;
+}
+
+.faq-content ul {
+  list-style: circle;
+  padding: 0 1em;
+  margin-bottom: 1.25rem;
+  line-height: 160%;
+}
+
+ol li, ul li {
+  display: list-item;
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+ul li::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
