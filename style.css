@@ -75,13 +75,14 @@ ul li::marker {
 }
 
 .sticky-wrapper {
-  height: 627px;
+  height: 1000px;
 }
 
 .faq-sticker {
   overflow-y: auto;
   max-height: 100%;
-  width: 195px;
+  width: 23%;
+  max-width: 400px;
   position: fixed;
   top: 102px;
   z-index: inherit;
@@ -91,4 +92,22 @@ a {
   text-decoration: none;
   color: inherit;
   transition: 0.2s ease-in-out;
+}
+@media (max-width: 1000px) {
+  /* desktop CSS: hide .mobile div */
+  .faq-nav {
+    display: none
+  }
+}
+
+li:hover{
+  background: #dae4e6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.faq-content  a{
+  text-decoration: underline;
 }
