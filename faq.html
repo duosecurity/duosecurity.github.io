@@ -13,9 +13,18 @@
         <div class="faq-sticker">
           <h4 class="faq-nav-header">Contents</h4>
           <ul>
-            <li><a href="#Question1">Question 1</a></li>
-            <li><a href="#Question2">Question 2</a></li>
-            <li><a href="#Question3">Question 3</a></li>
+            <li><a href="#Question1">I'm using the Universal Prompt, does this affect me?</a></li>
+            <li><a href="#Question2">How do I know if I'm using Web SDK v2 or the Universal Prompt?</a></li>
+            <li><a href="#Question3">Will my Web SDK v2 integrations still work?</a></li>
+            <li><a href="#Question4">Can I keep using the Web SDK v2 GitHub repositories after they are deprecated?</a></li>
+            <li><a href="#Question5">Can I still create Duo Web SDK v2 integrations that use the deprecated Web SDK v2 GitHub repositories?</a></li>
+            <li><a href="#Question6">Why is Duo deprecating the Web SDK v2 GitHub repositories?</a></li>
+            <li><a href="#Question7">Which GitHub repositories are being deprecated?</a></li>
+            <li><a href="#Question8">How do I upgrade an application to the Universal Prompt?</a></li>
+            <li><a href="#Question9">When will the Web SDK v2 GitHub repositories be deprecated?</a></li>
+            <li><a href="#Question10">What does deprecation of the Web SDK v2 GitHub repositories mean?</a></li>
+            <li><a href="#Question11">What will happen to the Web SDK v2 packages in package managers, for example PyPi?</a></li>
+            <li><a href="#Question12">What about Web SDK v2 GitHub repositories that don't have a Universal Prompt version?  Like duo_ruby, duo_perl, or duo_wordpress?</a></li>
           </ul>
         </div>
     </div>
@@ -24,26 +33,94 @@
       <h2>Web SDK v2 Repository Deprecation Frequently Asked Questions</h2>
       <p>last updated June 8th, 2022</p>
     <div id="Question1">
-    <h3>Question 1</h3>
+    <h3>I'm using the Universal Prompt, does this affect me?</h3>
   </div>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    <p>No.  Duo is only deprecating the older, non-Universal Prompt Web SDK repositories (also known as the Web SDK v2 repositories).</p>
     <div id="Question2">
-    <h3>Question 2</h3>
+      <h3>How do I know if I'm using Web SDK v2 or the Universal Prompt?</h3>
   </div>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    <p>If the repository you are using begins with "duo_universal", it is a Universal Prompt repository and is not affected by this deprecation - otherwise, it is a Web SDK v2 repository.  Another way to distinguish Web SDK v2-based integrations is to observe whether the Duo Prompt is being shown on an HTML page originating from your web application; that is, the prompt is being displayed from an iframe on a page in your own domain.  Also, all Web SDK v2 repositories are listed below in the "Which GitHub repositories are being deprecated?" question.</p>
     <div id="Question3">
-    <h3>Question 3</h3>
+    <h3>Will my Web SDK v2 integrations still work?</h3>
   </div>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    <p>Yes!  Web SDK v2 integrations will continue to function.  This deprecation only applies to GitHub repositories for the older, Web SDK v2 clients.  Though we do recommend you upgrade to the Universal Prompt for the improved user experience and additional features.</p>
+    <div id="Question4">
+      <h3>Can I keep using the Web SDK v2 GitHub repositories after they are deprecated?</h3>
+  </div>
+    <p>Yes.  The plan is to archive the GitHub repositories, but they will remain public.  You can still fork, clone, or pull from them; though as noted, it is unlikely they will receive any updates.</p>
+    <div id="Question5">
+      <h3>Can I still create Duo Web SDK v2 integrations that use the deprecated Web SDK v2 GitHub repositories?</h3>
+  </div>
+    <p>Yes.  This deprecation does not change anything in the Duo cloud service.</p>
+    <div id="Question6">
+      <h3>Why is Duo deprecating the Web SDK v2 GitHub repositories?</h3>
+  </div>
+    <p>Duo only plans to implement new functionality in the Universal Prompt, and therefore strongly encourages that applications migrate away from the older Web SDK v2 clients to the Universal Prompt clients.  Therefore, to clearly communicate that the older GitHub repositories will not be in active development, we are deprecating them.</p>
+    <div id="Question7">
+      <h3>Which GitHub repositories are being deprecated?</h3>
+  </div>
+    <p>All repositories related to Web SDK v2 integrations that do not use the Universal Prompt.  The full list is:</p>
     <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-      <li>item 4</li>
-      <li>item 5</li>
-      <li>item 6</li>      
+      <li>duo_python</li>
+      <li>duo_java</li>
+      <li>duo_ruby</li>
+      <li>duo_perl</li>
+      <li>duo_dotnet</li>
+      <li>duo_nodejs</li>      
+      <li>duo_php</li>      
+      <li>duo_oam_plugin</li>      
+      <li>duo_web_sdk</li>      
+      <li>duo_coldfusion</li>      
+      <li>duo_wordpress</li>      
+      <li>duo_classicasp</li>      
+      <li>duo_jira</li>      
+      <li>duo_confluence</li>      
+      <li>duo_splunk</li>      
     </ul>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    <div id="Question8">
+      <h3>How do I upgrade an application to the Universal Prompt?</h3>
+  </div>
+  <p>There are a variety of options.  Please see the <a href="https://duo.com/docs/universal-prompt-update-guide">Universal Prompt Update Guide</a> for an overview of the update process.</p>
+  <p>Duo has published multiple Universal Prompt client libraries, both to GitHub and online package managers:</p>
+    <ul>
+      <li><a href="https://github.com/duosecurity/duo_universal_python">Python</a></li>
+      <li><a href="https://pypi.org/project/duo-universal/">PyPi</a></li>
+      <li><a href="https://github.com/duosecurity/duo_universal_java">Java</a></li>
+      <li><a href="https://mvnrepository.com/artifact/com.duosecurity/duo-universal-sdk">Maven</a></li>
+      <li><a href="https://github.com/duosecurity/duo_universal_php">PHP</a></li>
+      <li><a href="https://packagist.org/packages/duosecurity/duo_universal_php">Packagist</a></li>      
+      <li><a href="https://github.com/duosecurity/duo_universal_nodejs">NodeJS</a></li>      
+      <li><a href="https://www.npmjs.com/package/@duosecurity/duo_universal">NPM</a></li>      
+      <li><a href="https://github.com/duosecurity/duo_universal_csharp">C#</a></li>      
+      <li><a href="https://www.nuget.org/packages/DuoUniversal/">NuGet</a></li>      
+      <li><a href="https://github.com/duosecurity/duo_universal_golang">Golang</a></li>      
+    </ul>
+    <p>For a step-by-step example of updating an existing Web SDK v2 application to the Universal Prompt, see <a href="https://github.com/duosecurity/duo_python/pull/57.">an example migration</a>.</p>
+    <p>Another option for web applications with OIDC support is to use our OIDC-based API, described in <a href="https://duo.com/docs/oauthapi">our OIDC API documentation</a>.</p>
+    <p>And for web applications with SAML support, consider getting the best of both worlds by using Duo's SSO and/or Passwordless products.</p>
+    <div id="Question9">
+      <h3>When will the Web SDK v2 GitHub repositories be deprecated?</h3>
+  </div>
+    <p>The GitHub repositories will be deprecated July 18, 2022.</p>
+    <div id="Question10">
+      <h3>What does deprecation of the Web SDK v2 GitHub repositories mean?</h3>
+  </div>
+    <p>Primarily, it means no feature work is planned on the GitHub repositories.  It is also unlikely that any new versions will be released, except in the case of significant security vulnerabilities being found.  The GitHub repositories will be archived and no longer accept issue reports or pull requests.</p>
+    <div id="Question11">
+      <h3>What will happen to the Web SDK v2 packages in package managers, for example PyPi?</h3>
+  </div>
+    <p>These packages will be deprecated in the package managers.  This generally means the packages will remain available for use, but will emit warnings about deprecation.  The packages will not receive updates or new releases, except in the case of a significant security vulnerability.</p>
+    <p>This applies only to the older Web SDK v2 packages, not the Universal Prompt client packages - those continue to be supported.  The packages in package managers that will be deprecated are:</p>
+    <ul>
+      <li><a href="https://pypi.org/project/duo-web/">Python / PyPi</a></li>
+      <li><a href="https://rubygems.org/gems/duo_web">Ruby / RubyGems</a></li>
+      <li><a href="https://www.npmjs.com/package/@duosecurity/duo_web">NodeJS / NPM</a></li>
+      <li><a href="https://packagist.org/packages/duosecurity/duo_php">PHP / Packagist</a></li>
+    </ul>
+    <div id="Question12">
+      <h3>What about Web SDK v2 GitHub repositories that don't have a Universal Prompt version?  Like duo_ruby, duo_perl, or duo_wordpress?</h3>
+  </div>
+  <p>Even though there are no replacements at this time, we will still be deprecating this category of repositories.  To implement a Universal Prompt integration in one of these languages or applications, you can use the Duo OIDC Auth API described in <a href="https://duo.com/docs/oauthapi">our OIDC API documentation</a>.</p>
     </div>
     </div>
   </body>
